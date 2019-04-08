@@ -1,7 +1,7 @@
 ﻿ 
  This folder contains all the MATLAB code from Finn Merlett's research project into PAS
- with E.coli, T4 phage and the antibiotics Ampicillin and Streptomycin this 
- academic year. 
+ with E.coli, T4 phage and the antibiotics Ampicillin and Streptomycin  academic year 
+ 2018 - 2019. 
  
  
  EXPERIMENTAL PLATES: LAYOUT -------------------------------------------
