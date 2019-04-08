@@ -42,7 +42,8 @@
  
  HOW TO USE THE MATLAB CODE FILES -------------------------------------------
    
-   • Add folder 'MATLAB code' and all subfolders to path
+   • Download entire folder to your computer
+   • Add folder 'MATLAB code' and all subfolders to path, within MATLAB
    • Use '\MATLAB code\Bacteriophage proj\Utility functions\xlsx_tidy.m' to 
      prepare your Excel data into a consistent format across files, to be
      imported. This can be skipped if your data is already consistent, but is
