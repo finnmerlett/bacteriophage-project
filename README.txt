@@ -1,13 +1,13 @@
-﻿ 
+ 
  This folder contains all the MATLAB code from Finn Merlett's research project into PAS
  with E.coli, T4 phage and the antibiotics Ampicillin and Streptomycin  academic year 
  2018 - 2019. 
  
  
- EXPERIMENTAL PLATES: LAYOUT -------------------------------------------
+ EXPERIMENTAL PLATES: LAYOUT (provided as example, modifiy to suit your needs) --------
  
  Experimental plate layout:
- (also found in \Experimental plate reads\Concentration layout matrix.xlsx)
+ 
  ┌──────────────┬───────┬───────┬───────┬───────┬───────┬───────┬───────┬───────┬────────┐
  │ 5000 →  5.00 │ 3.536 │ 2.500 │ 1.768 │ 1.250 │ 0.884 │ 0.625 │ 0.442 │   0   │   LB   │
  ├──────────────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┼────────┤
@@ -34,6 +34,7 @@
  
  Filenames for the experimental plate reads have the following structure:
  "[antibiotic used (shorthand)] [date] [type of read].xlsx"
+ replace each set of square brackets with the appropriate information.
  Antibiotic shorthands used: Amp = Ampicillin, Strep = Streptomycin
  Types of read are as follows:
    • single read: single OD reading per well per timepoint
@@ -52,10 +53,14 @@
      [filename structure: 'antibiotic date description.xlsx']
      See '\Example data\Tidied data' for example tidied output'
    • Use '\MATLAB code\Bacteriophage proj\Utility functions\Import_data.m' to
-     load your tidied Excel file into a MATLAB struct containing all the details
-     in separate fields. If you are loading many files, you can set up a loop to
-     add them all as separate index entries of the same struct. Save the stuct 
-     as 'Imported_Experimental_Data.mat' to use later
+     load your tidied Excel file into a MATLAB struct called 'datasets',
+     containing all the details in separate fields. If you are loading many
+     files, you can set up a loop to add them all as separate index entries of 
+     the same struct. Either save the stuct in a MATLAB datafile called
+     'Imported_Experimental_Data.mat' to load and use later (the line of code
+     at the top of the 'Strep_setup.m' file, described below, loads this for
+     use in the rest of the script), or make sure that the struct is already
+     in your workspace, named 'datasets'.
    • Modify '\MATLAB code\Bacteriophage proj\Strep_setup.m' to load your data
      and filter according to which antibiotic you are using. Options for
      processing and plotting are documented in the file.
