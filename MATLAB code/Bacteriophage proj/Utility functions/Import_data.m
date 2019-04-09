@@ -5,6 +5,8 @@ function o = Import_data(readArea, varargin)
 %   OR readArea,folder,filename
 %Data is imported into a struc with two info and one data fields.
 %readArea is accepted in excel range format eg. 'A4:BH56'
+%
+%Will return a struct with your data packaged into.
 
 %deal with arguments if present
 if nargin == 1
